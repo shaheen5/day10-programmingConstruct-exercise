@@ -12,3 +12,10 @@ dictCompute[expression1]=$(( a+b*c ))
 dictCompute[expression2]=$(( a*b+c ))
 dictCompute[expression3]=$(( c+a/b ))
 dictCompute[expression4]=$(( a%b+c ))
+
+#read values from dictionary into array
+for value in "${dictCompute[@]}"
+do
+	arr[count++]=$value
+done
+
