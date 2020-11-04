@@ -7,3 +7,4 @@ read -p "Enter c : " c
 (( a+b*c ))
 (( a*b+c ))
 (( c+a/b ))
+(( a%b+c ))
