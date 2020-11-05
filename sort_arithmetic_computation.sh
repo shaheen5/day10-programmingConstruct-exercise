@@ -1,4 +1,4 @@
-#!/bin/bash -x
+#!/bin/bash 
 
 echo "Arithmetic Computation and Sorting!"
 read -p "Enter a : " a
@@ -49,4 +49,11 @@ echo "Computation Result in Descending Order:"
 for (( i=3;i>=0;i-- ))
 do
 	echo -n "${arr[$i]}  "
+done
+
+#displaying result in asc order
+echo -e "\nComputation Result in Ascending Order:"
+for i in ${arr[@]}
+do
+	echo -n "$i  "
 done
